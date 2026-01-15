@@ -1,0 +1,10 @@
+[build]
+  base = "frontend"
+  publish = "build"
+  command = "CI=false npm run build"
+
+# React Router ke liye redirect rule (Page refresh fix)
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200
